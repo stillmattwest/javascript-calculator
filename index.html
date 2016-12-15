@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CodeSLO Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='calculator'>
+            <div class='display'>
+                <span class='digits'>0</span>
+                <span class='ops'></span>
+            </div>
+            <div class='brand'>
+                <span class='codeslo'>CodeSLO 1000</span>
+            </div>
+            <div class='btns'>
+                <div class='main-btn-area'>
+                    <ul class='num-btn-row' id='clear=btns'>
+                        <li><button class='calc-btn' id='ce'>CE</button></li>
+                        <li><button class='calc-btn' id='clear' data='C'>C</button></li>
+                        <li><button class='calc-btn' data='blank'>&nbsp</button></li>
+                    </ul>
+                    <ul class='num-btn-row' id='789'>
+                        <li><button class='num-btn calc-btn' data='7'>7</button></li>
+                        <li><button class='num-btn calc-btn' data='8'>8</button></li>
+                        <li><button class='num-btn calc-btn' data='9'>9</button></li>
+                    </ul>
+                    <ul class='num-btn-row' id='456'>
+                        <li><button class='num-btn calc-btn' data='4'>4</button></li>
+                        <li><button class='num-btn calc-btn' data='5'>5</button></li>
+                        <li><button class='num-btn calc-btn' data='6'>6</button></li>
+                    </ul>
+                    <ul class='num-btn-row' id='123'>
+                        <li><button class='num-btn calc-btn' data='1'>1</button></li>
+                        <li><button class='num-btn calc-btn' data='2'>2</button></li>
+                        <li><button class='num-btn calc-btn' data='3'>3</button></li>
+                    </ul>
+                    <ul class='num-btn-row' id='0-row'>
+                        <li><button class='num-btn calc-btn' data='0'>0</button></li>
+                        <li><button class='calc-btn num-btn' data='.'>.</button></li>
+                        <li><button class='calc-btn op-btn' data='equals' data-text='='>=</button></li>
+                    </ul>
+                </div>
+                <div class='side-btns'>
+                    <ul class='num-btn-row'>
+                        <li><button class='calc-btn op-btn' data='divide' data-text='&divide'>&divide</button></li>
+                    </ul>
+                    <ul class='num-btn-row'>
+                        <li><button class='calc-btn op-btn' data='multiply' data-text='&times'>&times</button></li>
+                    </ul>
+                    <ul class='num-btn-row'>
+                        <li><button class='calc-btn op-btn' data='subtract' data-text='-'>-</button></li>
+                    </ul class='num-btn-row'>
+                    <ul class='num-btn-row'>
+                        <li><button class='calc-btn op-btn plus-btn' data='add' data-text='+'>+</button></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src='client.js'></script>

@@ -1,0 +1,109 @@
+html,body{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+.container{
+    width:700px;
+    height:850px;
+    margin:100px auto 0 auto;
+}
+
+.calculator{
+    height:640px;
+    width:400px;
+    background-color:silver;
+    border:1px solid black;
+    padding:10px;
+    margin:0 auto;
+    text-align:center;
+}
+
+@font-face{
+    font-family:digital;
+    src:url('digital-7.ttf');
+}
+
+.display{
+    width:350px;
+    height:100px;
+    margin:25px auto 25px auto;
+    border:1px solid gray;
+    background-color:#A8B7A3;
+    font-family:digital;
+    font-size:60px;
+    text-align:right;
+}
+
+.brand{
+    text-align:right;
+    height:16px;
+}
+
+.codeslo{
+    padding-right:27px;
+    font-family:arial;
+    font-size:14px;
+    font-family:Helvetica, sans-serif;
+    color:gray;
+}
+
+.digits{
+    position:relative;
+    top:15px;
+    margin-right:5px;
+}
+
+.ops{
+    display:block;
+    position:relative;
+    top:25px;
+    margin-right:5px;
+    font-size:12px;
+}
+
+.btns{
+    width:100%;
+    text-align:left;
+    padding-left:25px;
+    font-family:Helvetica, sans-serif;
+}
+
+.main-btn-area{
+    display:inline-block;
+
+}
+
+.num-btn-row{
+    padding:0;
+}
+
+.num-btn-row li{
+    display:inline-block;
+}
+
+.calc-btn{
+    width:82px;
+    height:75px;
+    font-size:24px;
+}
+
+.plus-btn{
+    height:166px;
+}
+
+.side-btns{
+    display:inline-block;
+    list-style:none;
+    width:80px;
+    vertical-align: top;
+    padding-left:10px;
+}
+
+.side-btns ul{
+    margin-bottom:16px;
+}
+
