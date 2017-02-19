@@ -39,7 +39,7 @@ $('document').ready(function () {
             updateOps(txt);
             closedOut = false;
         } else if (newOperand === 'equals') {
-            if(closedOut){
+            if(closedOut || operating){
                 return;
             }
             calculate();
@@ -188,6 +188,7 @@ $('document').ready(function () {
         eval(operand + '(' + num + ')');
         clearDisplay();
         display(total);
+        
     }
 
 }); // end document ready
