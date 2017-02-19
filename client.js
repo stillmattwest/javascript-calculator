@@ -30,12 +30,18 @@ $('document').ready(function () {
         var newOperand = $(this).attr('data');
         var txt = $(this).attr('data-text');
         if (closedOut === true) {
+            if(newOperand === 'equals'){
+                return;
+            }
+            operand = newOperand;
             clearOps();
             updateOps(total);
             updateOps(txt);
-            operand = 'add';
             closedOut = false;
         } else if (newOperand === 'equals') {
+            if(closedOut){
+                return;
+            }
             calculate();
             updateOps(txt);
             updateOps(total);
